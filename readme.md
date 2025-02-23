@@ -1,14 +1,42 @@
-# ДЗ Тема: Основи технології  Docker
+## 📌 Requirements
+- [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
+- Git
 
-Створіть віртуальне оточення то встановіть необхідні бібліотеки
+## 🚀 Running the Project
 
-```bash
-pip install -r requirements.txt
-```
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/AnastasiaRiabova/goit-pythonweb-hw-02
+   cd goit-pythonweb-hw-02
+   ```
 
-Запуск:
+2. **Start Docker containers**
+   ```sh
+   docker-compose up --build
+   ```
 
-```bash 
-python main.py
-```
+3. **Check application functionality**
+   Open in a browser:
+   - Main App: [http://localhost:8000/](http://localhost:8000/docs)
+   - API documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
+   - Health check: [http://localhost:8000/healthchecker](http://localhost:8000/healthchecker)
 
+
+## 🛠 Commands for Managing Containers
+
+- Stop containers:
+  ```sh
+  docker-compose down
+  ```
+- Remove containers and data:
+  ```sh
+  docker-compose down -v
+  ```
+- Start in detached mode:
+  ```sh
+  docker-compose up -d
+  ```
+- View logs:
+  ```sh
+  docker-compose logs app
+  ```
